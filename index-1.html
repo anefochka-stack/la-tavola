@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Tavola — Ресторан</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f8f3ed;color:#33251f}
+header{background:#3b2921;color:white;text-align:center;padding:20px 15px}
+header h1{font-size:30px;margin-bottom:6px}
+header p{color:#e7cdb2}
+nav{background:white;display:flex;justify-content:center;flex-wrap:wrap;gap:5px;padding:12px 5px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px #0002}
+nav a{color:#3b2921;text-decoration:none;font-size:12px;font-weight:bold;padding:8px 7px}
+.hero{min-height:450px;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:40px 20px;background:linear-gradient(#0008,#0008),url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4") center/cover}
+.hero-content{max-width:420px}
+.hero h2{font-size:40px;margin-bottom:15px}
+.hero p{font-size:17px;line-height:1.6;margin-bottom:25px}
+.button{display:inline-block;background:#c58b55;color:white;text-decoration:none;padding:14px 25px;border-radius:30px;font-weight:bold}
+section{padding:45px 20px;text-align:center}
+section h2{font-size:28px;margin-bottom:15px}
+.intro{max-width:550px;margin:auto;line-height:1.7}
+.features{display:flex;flex-direction:column;gap:15px;max-width:600px;margin:25px auto 0}
+.feature{background:white;padding:25px 20px;border-radius:18px;box-shadow:0 4px 15px #0001}
+.feature-icon{font-size:40px;margin-bottom:10px}
+.feature h3{margin-bottom:8px}
+.menu-list{max-width:650px;margin:25px auto 0}
+.menu-item{background:white;padding:18px;margin-bottom:15px;border-radius:15px;display:flex;justify-content:space-between;align-items:center;gap:15px;text-align:left;box-shadow:0 4px 12px #0001}
+.menu-item h3{font-size:17px;margin-bottom:6px}
+.menu-item p{color:#777;font-size:13px;line-height:1.4}
+.price{color:#b06f3c;font-weight:bold;white-space:nowrap}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:650px;margin:25px auto 0}
+.gallery-item{background:white;border-radius:15px;overflow:hidden;box-shadow:0 4px 12px #0001}
+.gallery-item img{width:100%;height:150px;object-fit:cover;display:block}
+.gallery-item p{padding:10px 5px;font-weight:bold;font-size:14px}
+.booking{background:#eadccf}
+form{max-width:500px;margin:25px auto 0;text-align:left}
+input,select,textarea{width:100%;padding:13px;margin-bottom:15px;border:1px solid #d3c0af;border-radius:10px;font-size:15px;background:white}
+textarea{height:90px;resize:none}
+form button{width:100%;border:none;cursor:pointer;background:#3b2921;color:white;padding:15px;border-radius:25px;font-size:16px;font-weight:bold}
+.contacts{line-height:1.8}
+.contact-box{background:white;max-width:500px;margin:25px auto 0;padding:25px;border-radius:18px;box-shadow:0 4px 15px #0001}
+footer{background:#3b2921;color:white;text-align:center;padding:30px 15px}
+footer p{color:#e7d6c6;margin-top:8px}
+@media (min-width:600px){.features{flex-direction:row}.feature{flex:1}.gallery{grid-template-columns:repeat(3,1fr)}.gallery-item img{height:180px}}
+</style>
+</head>
+<body>
+<header><h1>🍷 La Tavola</h1><p>Смак, який хочеться повторити</p></header>
+<nav>
+<a href="#home">Головна</a><a href="#about">Про нас</a><a href="#menu">Меню</a><a href="#gallery">Галерея</a><a href="#booking">Бронювання</a><a href="#contacts">Контакти</a>
+</nav>
+<section class="hero" id="home"><div class="hero-content"><h2>Ласкаво просимо!</h2><p>Затишний ресторан європейської кухні, де кожна страва створена з любов'ю.</p><a class="button" href="#menu">Переглянути меню</a></div></section>
+<section id="about"><h2>👨‍🍳 Про наш ресторан</h2><p class="intro">La Tavola — це затишне місце для приємних зустрічей, сімейних вечерь та особливих моментів. Ми поєднуємо сучасну кухню, якісні продукти та теплу атмосферу.</p>
+<div class="features">
+<div class="feature"><div class="feature-icon">🍝</div><h3>Смачна кухня</h3><p>Авторські страви з натуральних продуктів.</p></div>
+<div class="feature"><div class="feature-icon">🥂</div><h3>Затишна атмосфера</h3><p>Ідеальне місце для друзів та родини.</p></div>
+<div class="feature"><div class="feature-icon">👨‍🍳</div><h3>Професійні кухарі</h3><p>Наша команда любить свою справу.</p></div>
+</div></section>
+<section id="menu"><h2>🍽️ Наше меню</h2><p class="intro">Спробуйте наші популярні страви.</p><div class="menu-list">
+<div class="menu-item"><div><h3>🥗 Салат «Цезар»</h3><p>Курка, салат, помідори, сир та соус</p></div><div class="price">185 грн</div></div>
+<div class="menu-item"><div><h3>🍝 Паста Карбонара</h3><p>Паста, бекон, вершковий соус та сир</p></div><div class="price">210 грн</div></div>
+<div class="menu-item"><div><h3>🍕 Піца «Маргарита»</h3><p>Томатний соус, моцарела та базилік</p></div><div class="price">195 грн</div></div>
+<div class="menu-item"><div><h3>🥩 Стейк з овочами</h3><p>Ніжне м'ясо з овочами на грилі</p></div><div class="price">320 грн</div></div>
+<div class="menu-item"><div><h3>🍰 Чізкейк</h3><p>Ніжний сирний десерт з ягідним соусом</p></div><div class="price">135 грн</div></div>
+<div class="menu-item"><div><h3>☕ Капучино</h3><p>Ароматна кава з молочною пінкою</p></div><div class="price">65 грн</div></div>
+</div></section>
+<section id="gallery"><h2>📸 Наша галерея</h2><p class="intro">Познайомтеся з нашими стравами та атмосферою ресторану.</p><div class="gallery">
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Інтер'єр ресторану"><p>Затишний інтер'єр</p></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Салат"><p>Свіжі салати</p></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" alt="Паста"><p>Домашня паста</p></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002" alt="Піца"><p>Ароматна піца</p></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="М'ясна страва"><p>Страви від шеф-кухаря</p></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187" alt="Десерт"><p>Смачні десерти</p></div>
+</div></section>
+<section class="booking" id="booking"><h2>📅 Забронювати столик</h2><p class="intro">Заповніть форму, щоб забронювати столик.</p>
+<form onsubmit="event.preventDefault();alert('Дякуємо! Ваш запит на бронювання прийнято.');">
+<input type="text" placeholder="Ваше ім'я" required><input type="tel" placeholder="Номер телефону" required><input type="date" required>
+<select required><option value="">Кількість гостей</option><option>1 гість</option><option>2 гості</option><option>3 гості</option><option>4 гості</option><option>5 гостей</option><option>6 гостей</option></select>
+<textarea placeholder="Ваші побажання"></textarea><button type="submit">Забронювати столик</button>
+</form></section>
+<section id="contacts"><h2>📞 Контакти</h2><div class="contact-box"><div class="contacts"><p>📍 м. Кам'янське, вул. Центральна, 15</p><p>📞 +380 67 123 45 67</p><p>✉️ latavola@example.com</p><p>🕐 Щодня: 10:00 — 22:00</p></div><br><a class="button" href="tel:+380671234567">Зателефонувати</a></div></section>
+<footer><h3>🍷 La Tavola</h3><p>Смак. Якість. Атмосфера.</p><p>© 2026 La Tavola</p></footer>
+</body>
+</html>
